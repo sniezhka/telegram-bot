@@ -24,6 +24,7 @@ namespace TelegramBot
         {
             Bot bot = new Bot(token);
 
+            bot.AttachSubscriber(SayHiSubscriber.Handle);
             bot.StartReceiving();
 
             Console.ReadKey();
